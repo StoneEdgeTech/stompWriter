@@ -8,7 +8,7 @@ import (
 
 	. "github.com/franela/goblin"
 	"github.com/gmallard/stompngo"
-	"github.com/monsooncommerce/mockstomp"
+	"github.com/stoneedgetech/mockstomp"
 	. "github.com/onsi/gomega"
 )
 
