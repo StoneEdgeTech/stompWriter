@@ -95,8 +95,8 @@ func TestStompWriter(t *testing.T) {
 			logLine := "logLinelogLinelogLine"
 			stompWriter.Write([]byte(logLine))
 
-			Expect(len(mockStomp.MessagesSent)).To(Equal(1))
-			msg := <-mockStomp.MessagesSent
+			Expect(len(mockStomp.Messages)).To(Equal(1))
+			msg := <-mockStomp.Messages
 
 			expectedMessage := mockstomp.MockStompMessage{
 				Order:   0,
